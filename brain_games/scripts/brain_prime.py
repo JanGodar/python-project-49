@@ -2,13 +2,11 @@
 import random
 import prompt
 
+
 def main():
-    #Приветствие
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}')
-
-
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
     counter = 0
 
@@ -36,6 +34,7 @@ def main():
                 counter += 1
 
     print(f'Congradulations, {name}!')
+
 
 if __name__ == "__main__":
     main()
