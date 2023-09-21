@@ -1,4 +1,5 @@
 import prompt
+from brain_games.cli import welcome_user
 GOOD_DECISION = 3
 
 
@@ -6,9 +7,7 @@ def engine_game(game_logic, welcome_game):
     '''Game framework function, responsible
     for the general logic of games'''
 
-    print('Welcome to the Brain Games!')
-    user_name = prompt.string('May I have your name? ')
-    print(f'Hello, {user_name}!')
+    user_name = welcome_user()
 
     print(welcome_game())
     good_decision_counter = 0
