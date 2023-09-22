@@ -1,13 +1,13 @@
 import random
 
-def problem_question():
+def game_quest():
     '''Returns the task that the player
        needs to complete'''
 
     return 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def logic_random_number():
+def log_even():
     '''Game logic that checks whether a number
        is prime or not'''
 
