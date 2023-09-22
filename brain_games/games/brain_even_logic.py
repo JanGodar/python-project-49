@@ -4,7 +4,7 @@ def problem_question():
     '''Returns the task that the player
        needs to complete'''
 
-    return 'Answer "yes" if the number is  even, otherwise answer "no".'
+    return 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def logic_random_number():
