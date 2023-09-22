@@ -26,5 +26,5 @@ def engine_game(game_logic, welcome_game):
             print(f'"{user_answer}" is wrong answer ;(.'
                   f'Correct answer was "{correct_answer}"')
 
-    print(f'Congradulations, {user_name}!')
+    print(f'Congratulations, {user_name}!')
 
