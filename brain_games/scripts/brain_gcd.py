@@ -2,6 +2,7 @@
 from brain_games.games.brain_gcd_logic import game_quest, log_gcd
 from brain_games.games.game import engine_game
 
+
 def main():
     '''Script for calling the game brain-gcd'''
     engine_game(log_gcd, game_quest)

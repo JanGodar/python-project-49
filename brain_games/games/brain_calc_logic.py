@@ -1,5 +1,6 @@
 import random
 
+
 def game_quest():
     '''Brain-calc game question'''
 

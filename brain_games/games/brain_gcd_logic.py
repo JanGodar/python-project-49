@@ -1,5 +1,6 @@
 import random
 
+
 def game_quest():
     '''Returns the game problem of finding the greatest
        common divisor'''
@@ -12,7 +13,7 @@ def log_gcd():
 
     first_num = random.randint(1, 100)
     second_num = random.randint(1, 100)
-    
+
     max_num = max(first_num, second_num)
     min_num = min(first_num, second_num)
     task = f'{max_num} {min_num}'

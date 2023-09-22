@@ -1,5 +1,6 @@
 import random
 
+
 def game_quest():
     '''Returns the task that the player
        needs to complete'''
@@ -16,4 +17,3 @@ def log_even():
     correct_answer = 'yes' if random_number % 2 == 0 else 'no'
 
     return correct_answer, task
-

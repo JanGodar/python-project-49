@@ -1,5 +1,5 @@
 import random
-from math import sqrt
+
 
 def game_quest():
     '''Brain-prime game question'''

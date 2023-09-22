@@ -28,6 +28,5 @@ def engine_game(game_logic, welcome_game):
                   f"Let's try again, {user_name}!")
             break
 
-    if good_decision_counter == GOOD_DECISION:    
+    if good_decision_counter == GOOD_DECISION:
         print(f'Congratulations, {user_name}!')
-

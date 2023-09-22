@@ -2,6 +2,7 @@
 from brain_games.games.brain_prog_logic import game_quest, log_prog
 from brain_games.games.game import engine_game
 
+
 def main():
     '''Script for callig the game brain-progression'''
     engine_game(log_prog, game_quest)
