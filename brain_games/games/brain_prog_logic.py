@@ -14,9 +14,8 @@ def log_prog():
     miss_index = random.randint(0, 9)
     common_list = [i for i in range(start, start+step*10, step)]
     
-    lost_num = common_list[miss_index]
+    correct_answer = common_list[miss_index]
     common_list[miss_index] = '..'
     
-    task = common_list
-    correct_answer = lost_num
+    task = ' '.join(map(str, common_list))
     return str(correct_answer), task
