@@ -14,8 +14,10 @@ def log_prime():
     task = random_num
 
     correct_answer = 'yes'
-    for i in range(2, int(sqrt(random_num)) + 1):
+    for i in range(2, random_num // 2 + 1):
         if random_num % i == 0:
             correct_answer = 'no'
+    if random_num == 1:
+        correct_answer = 'no'
 
     return correct_answer, task
