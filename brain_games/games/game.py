@@ -24,7 +24,8 @@ def engine_game(game_logic, welcome_game):
             good_decision_counter += 1
         else:
             print(f'"{user_answer}" is wrong answer ;(.'
-                  f'Correct answer was "{correct_answer}"')
+                  f'Correct answer was "{correct_answer}"'
+                  f"Let's try again, {user_name}!")
             break
 
     if good_decision_counter == GOOD_DECISION:    
