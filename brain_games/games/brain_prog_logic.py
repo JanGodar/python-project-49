@@ -13,7 +13,7 @@ def log_prog():
     start = random.randint(1, 100)
     step = random.randint(1, 10)
     miss_index = random.randint(0, 9)
-    common_list = [i for i in range(start, start+step*10, step)]
+    common_list = [i for i in range(start, start + step * 10, step)]
 
     correct_answer = common_list[miss_index]
     common_list[miss_index] = '..'
