@@ -1,14 +1,13 @@
 import random
 
 def game_quest():
-    '''Returns the task that the player
-       needs to complete'''
+    '''Brain-calc game question'''
 
     return 'What is the result of the expression?'
 
 
 def log_calc():
-    '''Logic for generating arithmetic expressions'''
+    '''Game logic brain-calc'''
 
     first_num = random.randint(1, 100)
     second_num = random.randint(1, 100)
