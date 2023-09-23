@@ -1,6 +1,7 @@
 import random
 NUM_OF_PROGRESSION_ELEM = 10
 
+
 def game_quest():
     '''Returns the brain-progression game question'''
 
