@@ -1,5 +1,5 @@
 import random
-
+NUM_OF_PROGRESSION_ELEM = 10
 
 def game_quest():
     '''Returns the brain-progression game question'''
@@ -13,7 +13,8 @@ def log_prog():
     start = random.randint(1, 100)
     step = random.randint(1, 10)
     miss_index = random.randint(0, 9)
-    common_list = [i for i in range(start, start + step * 10, step)]
+    stop = start + step * NUM_OF_PROGRESSION_ELEM
+    common_list = [i for i in range(start, stop, step)]
 
     correct_answer = common_list[miss_index]
     common_list[miss_index] = '..'
