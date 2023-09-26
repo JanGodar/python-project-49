@@ -1,6 +1,7 @@
 import random
 EVEN = 2
 
+
 def ask():
     '''Returns the task that the player
        needs to complete'''
