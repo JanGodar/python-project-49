@@ -2,13 +2,13 @@ import random
 NUM_OF_PROGRESSION_ELEM = 10
 
 
-def game_quest():
+def ask():
     '''Returns the brain-progression game question'''
 
     return 'What number is missing in the progression?'
 
 
-def log_prog():
+def build_log():
     '''logic of the game brain-progression'''
 
     start = random.randint(1, 100)

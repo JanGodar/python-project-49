@@ -1,23 +1,25 @@
 import random
+PLUS = 1
+MINUS = 2
 
 
-def game_quest():
+def ask():
     '''Brain-calc game question'''
 
     return 'What is the result of the expression?'
 
 
-def log_calc():
+def build_log():
     '''Game logic brain-calc'''
 
     first_num = random.randint(1, 100)
     second_num = random.randint(1, 100)
     index_operator = random.randint(1, 3)
 
-    if index_operator == 1:
+    if index_operator == PLUS:
         correct_answer = first_num + second_num
         task = f'{first_num} + {second_num}'
-    elif index_operator == 2:
+    elif index_operator == MINUS:
         correct_answer = first_num - second_num
         task = f'{first_num} - {second_num}'
     else:

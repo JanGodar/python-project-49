@@ -1,13 +1,13 @@
 import random
 
 
-def game_quest():
+def ask():
     '''Brain-prime game question'''
 
     return ('Answer "yes" if given number is prime. Otherwise answer "no".')
 
 
-def log_prime():
+def build_log():
     '''Game logic brain-prime'''
 
     random_num = random.randint(1, 100)

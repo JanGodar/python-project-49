@@ -1,14 +1,14 @@
 import random
 
 
-def game_quest():
+def ask():
     '''Returns the game problem of finding the greatest
        common divisor'''
 
     return 'Find the greatest common divisor of given numbers.'
 
 
-def log_gcd():
+def build_log():
     '''Logic for finding the greatest common divisor'''
 
     first_num = random.randint(1, 100)
