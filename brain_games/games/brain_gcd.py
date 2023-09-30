@@ -1,4 +1,4 @@
-import random
+from brain_games.random_num import make_num
 
 
 def ask():
@@ -8,11 +8,11 @@ def ask():
     return 'Find the greatest common divisor of given numbers.'
 
 
-def build_log():
+def build_logic():
     '''Logic for finding the greatest common divisor'''
 
-    first_num = random.randint(1, 100)
-    second_num = random.randint(1, 100)
+    first_num = make_num()
+    second_num = make_num()
 
     max_num = max(first_num, second_num)
     min_num = min(first_num, second_num)

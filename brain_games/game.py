@@ -1,8 +1,9 @@
 import prompt
-GOOD_DECISION = 3
+from brain_games.constant import GOOD_DECISION
 
 
-def engine_game(game_logic, welcome_game):
+
+def build_game(game_logic, welcome_game):
     '''Game framework function, responsible
     for the general logic of games'''
 

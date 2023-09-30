@@ -1,5 +1,6 @@
+from brain_games.random_num import make_num
+from brain_games.constant import NUM_OF_PROGRESSION_ELEM
 import random
-NUM_OF_PROGRESSION_ELEM = 10
 
 
 def ask():
@@ -8,10 +9,10 @@ def ask():
     return 'What number is missing in the progression?'
 
 
-def build_log():
+def build_logic():
     '''logic of the game brain-progression'''
 
-    start = random.randint(1, 100)
+    start = make_num()
     step = random.randint(1, 10)
     miss_index = random.randint(0, 9)
     stop = start + step * NUM_OF_PROGRESSION_ELEM

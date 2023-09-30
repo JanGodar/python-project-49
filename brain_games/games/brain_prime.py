@@ -1,4 +1,4 @@
-import random
+from brain_games.random_num import make_num
 
 
 def ask():
@@ -7,10 +7,10 @@ def ask():
     return ('Answer "yes" if given number is prime. Otherwise answer "no".')
 
 
-def build_log():
+def build_logic():
     '''Game logic brain-prime'''
 
-    random_num = random.randint(1, 100)
+    random_num = make_num()
     task = random_num
 
     correct_answer = 'yes'
