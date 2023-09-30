@@ -2,7 +2,6 @@ import prompt
 from brain_games.constant import GOOD_DECISION
 
 
-
 def build_game(game_logic, welcome_game):
     '''Game framework function, responsible
     for the general logic of games'''

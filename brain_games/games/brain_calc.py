@@ -2,6 +2,7 @@ from brain_games.random_num import make_num
 from brain_games.constant import PLUS, MINUS
 import random
 
+
 def ask():
     '''Brain-calc game question'''
 
