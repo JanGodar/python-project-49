@@ -1,5 +1,5 @@
 import prompt
-from brain_games.constant import GOOD_DECISION
+from brain_games.constant import RIGHT_ANSWERS
 
 
 def build_game(game_logic, welcome_game):
@@ -10,9 +10,9 @@ def build_game(game_logic, welcome_game):
                               'May I have your name? ')
     print(f'Hello, {user_name}!')
 
-    print(welcome_game())
+    print(welcome_game)
 
-    for _ in range(GOOD_DECISION):
+    for _ in range(RIGHT_ANSWERS):
 
         correct_answer, task = game_logic()
         print(f'Question: {task}')

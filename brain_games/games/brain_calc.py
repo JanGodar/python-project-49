@@ -3,12 +3,6 @@ from brain_games.constant import PLUS, MINUS
 import random
 
 
-def ask():
-    '''Brain-calc game question'''
-
-    return 'What is the result of the expression?'
-
-
 def build_logic():
     '''Game logic brain-calc'''
 

@@ -1,12 +1,6 @@
 from brain_games.random_num import make_num
 
 
-def ask():
-    '''Brain-prime game question'''
-
-    return ('Answer "yes" if given number is prime. Otherwise answer "no".')
-
-
 def build_logic():
     '''Game logic brain-prime'''
 

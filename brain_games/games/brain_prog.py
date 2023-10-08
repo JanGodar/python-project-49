@@ -3,12 +3,6 @@ from brain_games.constant import NUM_OF_PROGRESSION_ELEM
 import random
 
 
-def ask():
-    '''Returns the brain-progression game question'''
-
-    return 'What number is missing in the progression?'
-
-
 def build_logic():
     '''logic of the game brain-progression'''
 

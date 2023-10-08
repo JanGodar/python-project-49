@@ -1,13 +1,6 @@
 from brain_games.random_num import make_num
 
 
-def ask():
-    '''Returns the game problem of finding the greatest
-       common divisor'''
-
-    return 'Find the greatest common divisor of given numbers.'
-
-
 def build_logic():
     '''Logic for finding the greatest common divisor'''
 
