@@ -1,5 +1,5 @@
 from brain_games.utils import make_num
-from brain_games.constant import BRAIN_PROG, NUM_OF_PROGRESSION_ELEM, \
+from brain_games.constant import QUESTION_BRAIN_PROG, NUM_OF_PROG_ELEM, \
                                  START_OF_RANGE, END_OF_RANGE
 from brain_games.core import build_game
 
@@ -7,7 +7,7 @@ from brain_games.core import build_game
 def gives_list():
     start = make_num(START_OF_RANGE, END_OF_RANGE)
     step = make_num(1, 10)
-    stop = start + step * NUM_OF_PROGRESSION_ELEM
+    stop = start + step * NUM_OF_PROG_ELEM
     return [i for i in range(start, stop, step)]
 
 
@@ -25,4 +25,4 @@ def build_logic():
 
 
 def starts_the_game():
-    build_game(build_logic, BRAIN_PROG)
+    build_game(build_logic, QUESTION_BRAIN_PROG)

@@ -1,6 +1,6 @@
 from brain_games.utils import make_num
-from brain_games.constant import PLUS, MINUS, START_OF_RANGE, \
-                                 END_OF_RANGE, BRAIN_CALC
+from brain_games.constant import CALC_PLUS, CALC_MINUS, START_OF_RANGE, \
+                                 END_OF_RANGE, QUESTION_BRAIN_CALC
 from brain_games.core import build_game
 
 
@@ -21,11 +21,11 @@ def build_logic():
 
     first_num = make_num(START_OF_RANGE, END_OF_RANGE)
     second_num = make_num(START_OF_RANGE, END_OF_RANGE)
-    index_operator = make_num(PLUS, MINUS)
+    index_operator = make_num(CALC_PLUS, CALC_MINUS)
 
-    if index_operator == PLUS:
+    if index_operator == CALC_PLUS:
         correct_answer, task = folds(first_num, second_num)
-    elif index_operator == MINUS:
+    elif index_operator == CALC_MINUS:
         correct_answer, task = subtracts(first_num, second_num)
     else:
         correct_answer, task = multiplies(first_num, second_num)
@@ -34,4 +34,4 @@ def build_logic():
 
 
 def starts_the_game():
-    build_game(build_logic, BRAIN_CALC)
+    build_game(build_logic, QUESTION_BRAIN_CALC)

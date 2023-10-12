@@ -1,5 +1,5 @@
 from brain_games.utils import make_num
-from brain_games.constant import BRAIN_GCD, \
+from brain_games.constant import QUESTION_BRAIN_GCD, \
                                  START_OF_RANGE, END_OF_RANGE
 from brain_games.core import build_game
 
@@ -26,4 +26,4 @@ def build_logic():
 
 
 def starts_the_game():
-    build_game(build_logic, BRAIN_GCD)
+    build_game(build_logic, QUESTION_BRAIN_GCD)
