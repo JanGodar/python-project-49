@@ -3,8 +3,9 @@ PLUS = 1
 MINUS = 2
 EVEN = 2
 RIGHT_ANSWERS = 3
+START_OF_RANGE = 1
+END_OF_RANGE = 100
 
-#instructions for games
 BRAIN_CALC = 'What is the result of the expression?'
 BRAIN_EVEN = 'Answer "yes" if the number is even, otherwise answer "no".'
 BRAIN_GCD = 'Find the greatest common divisor of given numbers.'

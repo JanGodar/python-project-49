@@ -1,12 +1,10 @@
 #!/usr/bin/env python3
-from brain_games.games.brain_gcd import build_logic
-from brain_games.core import build_game
-from brain_games.constant import BRAIN_GCD
+from brain_games.games.brain_gcd import starts_the_game
 
 
 def main():
     '''Script for calling the game brain-gcd'''
-    build_game(build_logic, BRAIN_GCD)
+    starts_the_game()
 
 
 if __name__ == "__main__":
