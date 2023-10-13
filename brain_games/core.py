@@ -2,15 +2,19 @@ import prompt
 from brain_games.constant import RIGHT_ANSWERS
 
 
+def greets_user(welcome_game):
+    name = prompt.string('Welcome to the Brain Games!\n'
+                         'May I have your name? ')
+    print(f'Hello, {name}!')
+    print(welcome_game)
+    return name
+
+
 def build_game(game_logic, welcome_game):
     '''Game framework function, responsible
     for the general logic of games'''
 
-    user_name = prompt.string('Welcome to the Brain Games!\n'
-                              'May I have your name? ')
-    print(f'Hello, {user_name}!')
-
-    print(welcome_game)
+    user_name = greets_user(welcome_game)
 
     for _ in range(RIGHT_ANSWERS):
 

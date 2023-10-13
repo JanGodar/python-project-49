@@ -4,14 +4,13 @@ from brain_games.constant import QUESTION_BRAIN_PRIME, \
 from brain_games.core import build_game
 
 
-def gives_answer(random_num):
-    correct_answer = 'yes'
-    for i in range(2, random_num // 2 + 1):
+def is_prime(random_num):
+    if random_num < 2:
+        return False
+    for i in range(2, int(random_num ** 0.5 + 1)):
         if random_num % i == 0:
-            correct_answer = 'no'
-    if random_num == 1:
-        correct_answer = 'no'
-    return correct_answer
+            return False
+    return True
 
 
 def build_logic():
@@ -19,7 +18,7 @@ def build_logic():
 
     random_num = make_num(START_OF_RANGE, END_OF_RANGE)
     task = random_num
-    correct_answer = gives_answer(random_num)
+    correct_answer = 'yes' if is_prime(random_num) else 'no'
     return correct_answer, task
 
 
