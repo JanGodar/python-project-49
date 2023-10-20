@@ -33,5 +33,5 @@ def build_logic():
     return str(correct_answer), task
 
 
-def starts_the_game():
+def starts_brain_calc():
     build_game(build_logic, QUESTION_BRAIN_CALC)
