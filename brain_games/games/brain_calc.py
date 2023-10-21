@@ -1,6 +1,6 @@
 from brain_games.utils import make_num
 from brain_games.constant import CALC_PLUS, CALC_MINUS, START_OF_RANGE, \
-                                 END_OF_RANGE, QUESTION_BRAIN_CALC
+    END_OF_RANGE, QUESTION_BRAIN_CALC
 from brain_games.core import launches_game
 
 
