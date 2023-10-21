@@ -1,7 +1,7 @@
 from brain_games.utils import make_num
 from brain_games.constant import CALC_PLUS, CALC_MINUS, START_OF_RANGE, \
                                  END_OF_RANGE, QUESTION_BRAIN_CALC
-from brain_games.core import build_game
+from brain_games.core import launches_game
 
 
 def folds(first_num, second_num):
@@ -34,4 +34,4 @@ def build_logic():
 
 
 def starts_brain_calc():
-    build_game(build_logic, QUESTION_BRAIN_CALC)
+    launches_game(build_logic, QUESTION_BRAIN_CALC)
