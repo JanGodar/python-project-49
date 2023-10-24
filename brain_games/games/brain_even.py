@@ -1,14 +1,14 @@
 from brain_games.utils import make_num
-from brain_games.constant import CHECK_EVEN, QUESTION_BRAIN_EVEN, \
+from brain_games.constant import QUESTION_BRAIN_EVEN, \
     START_OF_RANGE, END_OF_RANGE
-from brain_games.core import launches_game
+from brain_games.core import start_game
 
 
 def is_even(random_number):
-    return True if random_number % CHECK_EVEN == 0 else False
+    return random_number % 2 == 0
 
 
-def build_logic():
+def get_answer_task():
     '''Game logic that checks whether a number
        is prime or not'''
 
@@ -19,5 +19,5 @@ def build_logic():
     return correct_answer, task
 
 
-def starts_brain_even():
-    launches_game(build_logic, QUESTION_BRAIN_EVEN)
+def start_even():
+    start_game(get_answer_task, QUESTION_BRAIN_EVEN)

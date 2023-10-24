@@ -1,7 +1,7 @@
 from brain_games.utils import make_num
 from brain_games.constant import QUESTION_BRAIN_PRIME, \
     START_OF_RANGE, END_OF_RANGE
-from brain_games.core import launches_game
+from brain_games.core import start_game
 
 
 def is_prime(random_num):
@@ -13,7 +13,7 @@ def is_prime(random_num):
     return True
 
 
-def build_logic():
+def get_answer_task():
     '''Game logic brain-prime'''
 
     random_num = make_num(START_OF_RANGE, END_OF_RANGE)
@@ -22,5 +22,5 @@ def build_logic():
     return correct_answer, task
 
 
-def starts_brain_prime():
-    launches_game(build_logic, QUESTION_BRAIN_PRIME)
+def start_prime():
+    start_game(get_answer_task, QUESTION_BRAIN_PRIME)

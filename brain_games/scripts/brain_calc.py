@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-from brain_games.games.brain_calc import starts_brain_calc
+from brain_games.games.brain_calc import start_calc
 
 
 def main():
     '''Script for calling the game brain-calc'''
-    starts_brain_calc()
+    start_calc()
 
 
 if __name__ == '__main__':
