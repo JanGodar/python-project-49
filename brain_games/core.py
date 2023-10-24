@@ -2,7 +2,7 @@ import prompt
 from brain_games.constant import NUMBER_OF_ROUNDS
 
 
-def start_game(get_correct_answer_task, welcome_game):
+def start_game(get_answer_task, welcome_game):
     '''Game framework function, responsible
     for the general logic of games'''
 
@@ -12,7 +12,7 @@ def start_game(get_correct_answer_task, welcome_game):
 
     for _ in range(NUMBER_OF_ROUNDS):
 
-        correct_answer, task = get_correct_answer_task()
+        correct_answer, task = get_answer_task()
         user_answer = prompt.string(f'Question: {task}\nYour answer: ')
 
         if user_answer == correct_answer:
