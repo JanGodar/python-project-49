@@ -1,15 +1,13 @@
-CALC_PLUS = 1
-CALC_MINUS = 3
-NUM_OF_PROG_ELEM = 10
+NUM_PROG_ELEM = 10
 
-NUMBER_OF_ROUNDS = 3
-START_OF_RANGE = 1
-END_OF_RANGE = 100
+NUMBER_ROUNDS = 3
+START_RANGE = 1
+END_RANGE = 100
 
-QUESTION_BRAIN_CALC = 'What is the result of the expression?'
-QUESTION_BRAIN_EVEN = 'Answer "yes" if the number is even, \
+QUESTION_CALC_GAME = 'What is the result of the expression?'
+QUESTION_EVEN_GAME = 'Answer "yes" if the number is even, \
 otherwise answer "no".'
-QUESTION_BRAIN_GCD = 'Find the greatest common divisor of given numbers.'
-QUESTION_BRAIN_PRIME = 'Answer "yes" if given number is prime. \
+QUESTION_GCD_GAME = 'Find the greatest common divisor of given numbers.'
+QUESTION_PRIME_GAME = 'Answer "yes" if given number is prime. \
 Otherwise answer "no".'
-QUESTION_BRAIN_PROG = 'What number is missing in the progression?'
+QUESTION_PROG_GAME = 'What number is missing in the progression?'

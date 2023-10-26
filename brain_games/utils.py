@@ -1,6 +1,6 @@
-from random import randint
+import random
 
 
-def make_num(start_range, end_range):
-    num = randint(start_range, end_range)
+def get_num(start_range, end_range):
+    num = random.randint(start_range, end_range)
     return num
