@@ -1,3 +1,4 @@
+OPERATORS = ['+', '-', '*']
 NUM_PROG_ELEM = 10
 
 NUMBER_ROUNDS = 3

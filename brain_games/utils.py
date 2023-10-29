@@ -1,6 +1,7 @@
 import random
+from brain_games.constant import START_RANGE, END_RANGE
 
 
-def get_num(start_range, end_range):
-    num = random.randint(start_range, end_range)
+def get_num():
+    num = random.randint(start = START_RANGE, end = END_RANGE)
     return num
