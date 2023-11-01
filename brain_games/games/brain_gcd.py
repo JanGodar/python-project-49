@@ -8,15 +8,12 @@ def get_answer(first_num, second_num):
     return math.gcd(first_num, second_num)
 
 
-def get_answer_and_task():
-    first_num = get_num()
-    second_num = get_num()
-
-    task = f'{first_num} {second_num}'
-    correct_answer = get_answer(first_num, second_num)
-
-    return str(correct_answer), task
+def get_question_and_answer():
+    first_num, second_num = get_num(), get_num()
+    question = f'{first_num} {second_num}'
+    answer = get_answer(first_num, second_num)
+    return question, str(answer)
 
 
 def start_gcd_game():
-    start_game(get_answer_and_task, QUESTION_GCD_GAME)
+    start_game(get_question_and_answer, QUESTION_GCD_GAME)

@@ -3,7 +3,6 @@ from brain_games.games.brain_prog import start_prog_game
 
 
 def main():
-    '''Script for callig the game brain-progression'''
     start_prog_game()
 
 

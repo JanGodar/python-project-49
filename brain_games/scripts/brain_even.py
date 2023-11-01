@@ -3,7 +3,6 @@ from brain_games.games.brain_even import start_even_game
 
 
 def main():
-    '''Even number game script'''
     start_even_game()
 
 

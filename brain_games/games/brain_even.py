@@ -7,13 +7,12 @@ def is_even(random_number):
     return random_number % 2 == 0
 
 
-def get_answer_and_task():
+def get_question_and_answer():
     random_number = get_num()
-    task = f'{random_number}'
-    correct_answer = 'yes' if is_even(random_number) else 'no'
-
-    return correct_answer, task
+    question = f'{random_number}'
+    answer = 'yes' if is_even(random_number) else 'no'
+    return question, answer
 
 
 def start_even_game():
-    start_game(get_answer_and_task, QUESTION_EVEN_GAME)
+    start_game(get_question_and_answer, QUESTION_EVEN_GAME)

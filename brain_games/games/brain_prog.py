@@ -10,16 +10,14 @@ def get_list():
     return [i for i in range(start, stop, step)]
 
 
-def get_answer_and_task():
+def get_question_and_answer():
     miss_index = get_num(0, 9)
     common_list = get_list()
-    correct_answer = common_list[miss_index]
-
+    answer = common_list[miss_index]
     common_list[miss_index] = '..'
-    task = ' '.join(map(str, common_list))
-
-    return str(correct_answer), task
+    question = ' '.join(map(str, common_list))
+    return question, str(answer)
 
 
 def start_prog_game():
-    start_game(get_answer_and_task, QUESTION_PROG_GAME)
+    start_game(get_question_and_answer, QUESTION_PROG_GAME)
