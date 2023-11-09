@@ -2,10 +2,10 @@ import prompt
 from brain_games.constant import NUMBER_ROUNDS
 
 
-def start_game(get_question_and_answer, game_task):
+def start_game(get_question_and_answer, game_instruction):
     user_name = prompt.string('Welcome to the Brain Games!\n'
                               'May I have your name? ')
-    print(f'Hello, {user_name}!\n{game_task}')
+    print(f'Hello, {user_name}!\n{game_instruction}')
 
     for _ in range(NUMBER_ROUNDS):
 
@@ -15,8 +15,8 @@ def start_game(get_question_and_answer, game_task):
         if user_answer == correct_answer:
             print('Correct!')
         else:
-            print(f'"{user_answer}" is wrong answer ;(.'
-                  f'Correct answer was "{correct_answer}" '
+            print(f"'{user_answer}' is wrong answer ;(. "
+                  f"Correct answer was '{correct_answer}'. "
                   f"Let's try again, {user_name}!")
             return
         print(f'Congratulations, {user_name}!')

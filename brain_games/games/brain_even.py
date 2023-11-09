@@ -9,7 +9,7 @@ def is_even(random_number):
 
 def get_question_and_answer():
     random_number = get_num()
-    question = f'{random_number}'
+    question = str(random_number)
     answer = 'yes' if is_even(random_number) else 'no'
     return question, answer
 
