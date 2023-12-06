@@ -13,15 +13,15 @@ python3 -m pip uninstall hexlet-code
 ### **Hello! This project contains 5 games**  
 This project needs to be installed on your personal computer and go to the root directory  
 To play even numbers, type `brain-even`  
-In this game you have to answer whether the number is even or not.
-To play prime numbers, type `brain-prime` 
-In this game you have to answer whether a number is prime or not.
-To play finding a member of a sequence, type `brain-progressive`
-In this game you need to find the missing member of the sequence.
-To play the calculator, type `brain-calc`
-In this game you need to calculate the result of the expression.
-To play the game of finding the greatest common divisor, type `brain-gcd`  
-In this game you need to find the least common divisor.
+In this game you have to answer whether the number is even or not.  
+To play prime numbers, type `brain-prime`  
+In this game you have to answer whether a number is prime or not.  
+To play finding a member of a sequence, type `brain-progressive`  
+In this game you need to find the missing member of the sequence.  
+To play the calculator, type `brain-calc`  
+In this game you need to calculate the result of the expression.  
+To play the game of finding the greatest common divisor, type `brain-gcd`    
+In this game you need to find the least common divisor.  
 ***Good luck!***
 
 
